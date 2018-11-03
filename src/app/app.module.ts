@@ -4,11 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { DropdownModule } from 'primeng/dropdown';
-import { FormsModule } from '@angular/forms';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './pages/login/login.component';
 import { FooterComponent } from './widgets/footer/footer.component';
+import { SharedModule } from './modules/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -19,11 +18,11 @@ import { FooterComponent } from './widgets/footer/footer.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    SharedModule,
     AppRoutingModule,
-    FormsModule,
-    DropdownModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
