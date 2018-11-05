@@ -10,6 +10,8 @@ import { FooterComponent } from './widgets/footer/footer.component';
 import { SharedModule } from './modules/shared/shared.module';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     LoginComponent,
     FooterComponent,
     DashboardComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SidenavComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

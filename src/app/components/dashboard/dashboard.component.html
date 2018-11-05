@@ -1,4 +1,11 @@
 <div class="dashboard-container">
-  <p>dashboard</p>
-  <router-outlet></router-outlet>
+  <div class="header-container">
+    <app-header></app-header>
+  </div>
+  <div class="sidenav-container">
+    <app-sidenav></app-sidenav>
+  </div>
+  <div class="main-container">
+    <router-outlet></router-outlet>
+  </div>
 </div>
