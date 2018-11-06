@@ -1,3 +1,8 @@
-<p>
-  header works!
-</p>
+<div class="app-header">
+  <div class="app-name" [class.app-name-hide]="toggleHide">
+    PrimeNg Admin
+  </div>
+  <div class="toggle-sidenav" [class.toggle-sidenav-hide]="toggleHide" (click)="onToggleSidenav()">
+    <i class="fas fa-bars"></i>
+  </div>
+</div>

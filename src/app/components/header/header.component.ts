@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  toggleHide = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onToggleSidenav() {
+    this.toggleHide = !this.toggleHide;
   }
 
 }

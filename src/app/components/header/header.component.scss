@@ -1,0 +1,41 @@
+@import "../../../variables";
+
+.app-header {
+
+  position: relative;
+
+  .app-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 110;
+    width: $sidenav-width;
+    height: $header-height;
+    background-color: $color1-800;
+    padding: 0 1rem;
+    transition: left 600ms ease-out;
+  }
+
+  .app-name-hide {
+    left: -$sidenav-width;
+  }
+
+  .toggle-sidenav {
+    position: absolute;
+    left: $sidenav-width;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 3rem;
+    height: $header-height;
+    text-align: center;
+    cursor: pointer;
+    transition: left 600ms ease-out;
+  }
+
+  .toggle-sidenav-hide {
+    left: 0;
+  }
+
+}
