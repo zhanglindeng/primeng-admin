@@ -4,6 +4,7 @@
   background-color: $page-background-color;
   height: 100vh;
 
+
   .header-container {
     position: fixed;
     top: 0;
@@ -26,6 +27,11 @@
     //height: calc(100vh - #{$header-height});
     background-color: $color2;
     color: #fff;
+    transition: left $toggle-sidenav;
+  }
+
+  .hide-sidenav {
+    left: -$sidenav-width;
   }
 
   .main-container {
@@ -33,5 +39,10 @@
     margin-top: $header-height;
     padding: 1rem;
     overflow: auto;
+    transition: margin-left $toggle-sidenav;
+  }
+
+  .main-container-full {
+    margin-left: 0;
   }
 }

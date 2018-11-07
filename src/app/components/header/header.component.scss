@@ -14,7 +14,7 @@
     height: $header-height;
     background-color: $color1-800;
     padding: 0 1rem;
-    transition: left 600ms ease-out;
+    transition: left $toggle-sidenav;
   }
 
   .app-name-hide {
@@ -31,7 +31,7 @@
     height: $header-height;
     text-align: center;
     cursor: pointer;
-    transition: left 600ms ease-out;
+    transition: left $toggle-sidenav;
   }
 
   .toggle-sidenav-hide {

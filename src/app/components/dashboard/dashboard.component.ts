@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  hideSidenav = false;
+
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  onToggleSidenav(v) {
+    this.hideSidenav = v;
   }
 
 }

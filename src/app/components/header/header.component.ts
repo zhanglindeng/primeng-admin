@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,13 +9,17 @@ export class HeaderComponent implements OnInit {
 
   toggleHide = false;
 
-  constructor() { }
+  @Output() onToggleSidenav: EventEmitter<boolean> = new EventEmitter();
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
-  onToggleSidenav() {
+  toggleSidenav() {
     this.toggleHide = !this.toggleHide;
+    this.onToggleSidenav.emit(this.toggleHide);
   }
 
 }

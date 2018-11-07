@@ -1,11 +1,11 @@
 <div class="dashboard-container">
   <div class="header-container">
-    <app-header></app-header>
+    <app-header (onToggleSidenav)="onToggleSidenav($event)"></app-header>
   </div>
-  <div class="sidenav-container">
+  <div class="sidenav-container" [class.hide-sidenav]="hideSidenav">
     <app-sidenav></app-sidenav>
   </div>
-  <div class="main-container">
+  <div class="main-container" [class.main-container-full]="hideSidenav">
     <router-outlet></router-outlet>
   </div>
 </div>
