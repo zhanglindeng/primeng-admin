@@ -1,0 +1,47 @@
+@import "../../../variables";
+
+.sidenav-wrapper {
+  //border-bottom: 1px solid red;
+  .home-link {
+    display: block;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #fff;
+    padding: 1rem;
+
+    .fa {
+      margin-right: 1rem;
+    }
+  }
+
+  .menu-level-1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 1rem;
+    //border-top: 1px solid $color2-800;
+    cursor: pointer;
+    .fa {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      background-color: $color2-800;
+    }
+  }
+
+  .menu-items {
+    display: block;
+    .menu-link {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.25rem;
+      padding: 1rem;
+      background-color: $color2-800;
+      .fa {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

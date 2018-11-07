@@ -28,6 +28,7 @@
     background-color: $color2;
     color: #fff;
     transition: left $toggle-sidenav;
+    overflow: auto;
   }
 
   .hide-sidenav {
